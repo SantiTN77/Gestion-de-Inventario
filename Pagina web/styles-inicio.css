@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font choice */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background for readability */
+    color: #333; /* Dark gray for text contrast */
+    line-height: 1.6; /* Improve readability with line spacing */
+    font-size: 16px; /* Tamaño de fuente por defecto */
+    
+}
+
+/* Estilos para el texto de bienvenida */
+.bienvenida {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF; /* Color del texto */
+    text-shadow: 2px 2px 4px #000000; /* Sombra de texto */
+}
+
+/* Estilos para la descripción */
+.descripcion {
+    font-size: 18px;
+    color: #F0F0F0; /* Color del texto */
+    text-shadow: 1px 1px 3px #000000; /* Sombra de texto */
+}
+
+/* Estilos para las pestañas */
+.pestana {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* Color del texto */
+    text-shadow: 2px 2px 4px #000000; /* Sombra de texto */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(#8d4c23fd, #000000); /* Gradient background */
+  color: #fff;
+    padding: 1rem 2rem; /* Adjust padding for better spacing */
+    box-shadow: 0 2px 4px rgba(160, 70, 70, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: space-between; /* Align logo and navigation */
+    align-items: center; /* Vertically center content */
+    position: fixed; /* Fix header to the top */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensure header stays on top */
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    display: block;
+    margin-right: 2rem;
+}
+
+header .logo img {
+    max-width: 150px; /* Limit logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal navigation */
+}
+
+header nav li {
+    margin: 0 1rem; /* Adjust spacing between navigation items */
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Bold font for navigation links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+header nav a.active {
+    color: #007bff; /* Blue color for active link */
+}
+
+header nav a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 8rem; /* Adjust padding to account for fixed header */
+}
+
+.container {
+    max-width: 1200px; /* Limit content width for better readability */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 0 2rem; /* Add padding for better spacing */
+}
+
+section {
+    padding: 4rem 0; /* Add padding for better spacing */
+}
+
+h1, h2, h3 {
+    font-weight: bold; /* Bold font for headings */
+    margin-bottom: 1rem; /* Add margin for better spacing */
+}
+
+p {
+    line-height: 1.8; /* Improve readability with line spacing */
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007bff; /* Blue background for button */
+    color: #fff; /* White text for contrast */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners for a softer look */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url("fondo_inicio.jpg"); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 8rem 0; /* Adjust padding for better spacing */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Larger font size for hero title */
+}
+
+/* Features Section Styles */
+.features {
+    background-color: #8d4c23fd; /* White background for features section */
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 2rem; /* Add spacing between grid items */
+    margin-top: 2rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ddd; /* Subtle border for feature items */
+    border-radius: 5px; /* Rounded corners for a softer look */
+}
+
+.feature img {
+    max-width: 80px; /* Limit icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Add margin for better spacing */
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #f2f2f2; /* Light gray background for testimonials section */
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable smooth scrolling */
+    margin-top: 2rem;
+}
+
+.testimonial {
+    min-width: 300px; /* Minimum width for each testimonial */
+    padding: 2rem;
+    background-color: #fff; /* White background for testimonials */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    margin-right: 1rem; /* Add spacing between testimonials */
+    scroll-snap-align: start; /* Align testimonials to the start */
+}
+
+.testimonial p {
+    margin-bottom: 1rem; /* Add margin for better spacing */
+}
+
+.testimonial span {
+    font-weight: bold; /* Bold font for testimonial author */
+}
+
+/* Call to Action Section Styles */
+.call-to-action {
+    background-color: #007bff; /* Blue background for call to action */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 4rem 0; /* Adjust padding for better spacing */
+}
+
+.call-to-action p {
+    margin-bottom: 2rem; /* Add margin for better spacing */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark gray background for footer */
+    color: #fff; /* White text for contrast */
+    padding: 2rem 0; /* Adjust padding for better spacing */
+    text-align: center;
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr; /* Stack features vertically */
+    }
+
+    .testimonial-slider {
+        display: block; /* Disable horizontal scrolling */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    .testimonial {
+        margin-right: 0; /* Remove spacing between testimonials */
+    }
+}
